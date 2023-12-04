@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.image{
+    position:relative;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding:3px;
+    margin-bottom: 10px;
+}
+.profile-image{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid white;
+}
+.profile-card{
+    background-color:#fff;
+    width:100%;
+    max-width:370px;
+    border-radius:25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    padding:25px;
+    position: relative;
+}
+.text-data ,.profile-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.name{
+    font-size: 22px;;
+}
+.profile-card>.social-icons{
+    display:flex;
+}
+.social-icons>a{
+    margin:10px;
+    background-color: #4070f4;
+    color:white;
+    width:30px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size:15px;
+    margin-top:15px;
+}
+/* yahan pe .icon-1 kewal likh ke karoge toh work nahi karega */
+.social-icons>.icon-1{
+    background-color: #4267b2;
+}
+.social-icons>.icon-2{
+    background-color: #1da1f2;
+}
+.social-icons>.icon-3{
+    background-color: #e1306c;
+}
+.social-icons>.icon-4{
+    background-color: #ff0000;
+}
+.button{
+    background-color: #4070f4;
+    width:120px;
+    padding:5px;
+    color:white;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    margin-top:15px;
+    font-size: 14px;
+    cursor:pointer; 
+    transition:all 0.3s ease;
+}
+.button:hover{
+    background-color: #0e4bf1;
+}
+.buttons{
+    display:flex;
+    gap:20px;
+}
+.analytics>div{
+    margin-top:20px;
+    display:flex;
+    padding:0 20px;
+    border-right:2px solid #e7e7e7;
+}
+.analytics>.shares{
+    border:none;
+}
+.analytics{
+    display: flex;
+}
+.data i{
+    margin-right:5px;
+}
+.profile-card::before{
+    content:"";
+    height:36%;
+    width:100%;
+    background-color: #4070f4;
+    border:24px 24px 0 0;
+    top:0;
+    border-radius: 25px 25px 0 0;
+    position:absolute;
+}
